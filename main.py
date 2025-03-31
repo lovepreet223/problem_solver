@@ -14,7 +14,6 @@ from utils import question_solver
 # Load environment variables from .env file
 load_dotenv()
 
-os.environ["TOKENIZERS_PARALLELISM"] = "false"
 # API Configuration
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 AIPROXY_TOKEN = os.getenv("AIPROXY_TOKEN")
