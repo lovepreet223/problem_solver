@@ -54,6 +54,9 @@ with open("questions/questions.json", "r", encoding="utf-8") as f:
 with open("utils/question_solver.json", "r", encoding="utf-8") as f:
     question_solver_json = json.load(f)
 
+@app.get("/")
+async def root():
+    return {"status": "healthy", "message": "API is running"}
 
 @app.post("/api/")
 async def get_answer(
