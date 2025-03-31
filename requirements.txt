@@ -20,4 +20,5 @@ fuzzywuzzy>=0.18.0
 python-Levenshtein>=0.20.0
 starlette>=0.27.0
 youtube-transcript-api
+lxml
 
